@@ -1,0 +1,10 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site — no build step'",
+    "dev": "npx serve . -p 3000",
+    "deploy": "wrangler pages deploy . --project-name=flatfinderil-preview"
+  }
+}
