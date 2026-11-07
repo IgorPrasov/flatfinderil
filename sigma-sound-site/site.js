@@ -4,7 +4,9 @@ const CONFIG = {
   phoneShown: "053-995-4331",        // как показывать номер на сайте
   email: "",                         // почта для заявок (пусто = не показывать)
   instagram: "sigma_sound_tlv",
-  area: { ru: "Тель-Авив и центр", he: "תל אביב והמרכז" }
+  area: { ru: "Тель-Авив и центр", he: "תל אביב והמרכז" },
+  hours: { ru: "Вс–Чт, 10:00–18:00", he: "א׳–ה׳, 10:00–18:00" },
+  closed: { ru: "Пятница и суббота — выходные", he: "שישי ושבת סגור" }
 };
 // ===================================================
 
@@ -45,6 +47,7 @@ function contact(preset) {
         <div><span>WhatsApp / ${L("Телефон", "טלפון")}</span><a href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener"><b dir="ltr">${CONFIG.phoneShown}</b></a></div>
         <div><span>Instagram</span><a href="https://www.instagram.com/${CONFIG.instagram}/" target="_blank" rel="noopener"><b dir="ltr">@${CONFIG.instagram}</b></a></div>
         ${CONFIG.email ? `<div><span>Email</span><b>${CONFIG.email}</b></div>` : ""}
+        <div><span>${L("Часы работы", "שעות פעילות")}</span><b dir="auto">${L(CONFIG.hours.ru, CONFIG.hours.he)}</b><small class="muted">${L(CONFIG.closed.ru, CONFIG.closed.he)}</small></div>
         <div><span>${L("Район работы", "אזור שירות")}</span>${L(CONFIG.area.ru, CONFIG.area.he)}</div>
       </div>
     </div>
@@ -70,7 +73,7 @@ function contact(preset) {
 
 function footer() {
   return `<footer><div class="wrap">
-    <span>© ${new Date().getFullYear()} SIGMA SOUND · ${L("аудио, видео, умный дом и безопасность", "אודיו, וידאו, בית חכם ואבטחה")}</span>
+    <span>© ${new Date().getFullYear()} SIGMA SOUND · ${L("аудио, видео, умный дом и безопасность", "אודיו, וידאו, בית חכם ואבטחה")} · ${L(CONFIG.hours.ru, CONFIG.hours.he)}</span>
     <span><a href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener" dir="ltr">WhatsApp ${CONFIG.phoneShown}</a> · <a href="https://www.instagram.com/${CONFIG.instagram}/" target="_blank" rel="noopener" dir="ltr">Instagram @${CONFIG.instagram}</a></span>
   </div></footer>`;
 }
