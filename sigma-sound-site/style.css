@@ -137,13 +137,13 @@ textarea{min-height:110px;resize:vertical}
 .out.show{display:grid}
 .out a{color:var(--accent);word-break:break-all}
 .contacts-list{display:grid;gap:14px;margin-top:20px;font-family:var(--mono);font-size:15px}
-.contacts-list span{color:var(--muted);display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.contacts-list > div > span:first-child{color:var(--muted);display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
 .ph{border-bottom:1px dashed var(--muted)}
 
 footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
 
-html[lang="he"] .tag,html[lang="he"] .spec dt,html[lang="he"] .contacts-list span{letter-spacing:0;font-family:var(--body);font-weight:600}
+html[lang="he"] .tag,html[lang="he"] .spec dt,html[lang="he"] .contacts-list > div > span:first-child{letter-spacing:0;font-family:var(--body);font-weight:600}
 .contacts-list a{text-decoration:none;color:var(--text)}
 .contacts-list a:hover b{color:var(--accent)}
 footer a{color:var(--muted);text-decoration:none}
