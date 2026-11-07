@@ -1,9 +1,10 @@
 // ===== Настройки: замени на реальные контакты =====
 const CONFIG = {
-  whatsapp: "972500000000",          // номер для WhatsApp, международный формат без "+"
-  phoneShown: "050-000-0000",        // как показывать номер на сайте
-  email: "info@sigmasound.co.il",    // почта для заявок
-  area: { ru: "Израиль", he: "ישראל" }
+  whatsapp: "972539954331",          // номер для WhatsApp, международный формат без "+"
+  phoneShown: "053-995-4331",        // как показывать номер на сайте
+  email: "",                         // почта для заявок (пусто = не показывать)
+  instagram: "sigma_sound_tlv",
+  area: { ru: "Тель-Авив и центр", he: "תל אביב והמרכז" }
 };
 // ===================================================
 
@@ -41,8 +42,9 @@ function contact(preset) {
       <p class="lead">${L("Приедем, посмотрим помещение и пришлём проект с ценой. Выезд на замер бесплатный.",
                           "נגיע, נראה את המקום ונשלח תכנון עם הצעת מחיר. ביקור ומדידה ללא עלות.")}</p>
       <div class="contacts-list">
-        <div><span>WhatsApp / ${L("Телефон", "טלפון")}</span><b class="ph">${CONFIG.phoneShown}</b></div>
-        <div><span>Email</span><b class="ph">${CONFIG.email}</b></div>
+        <div><span>WhatsApp / ${L("Телефон", "טלפון")}</span><a href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener"><b dir="ltr">${CONFIG.phoneShown}</b></a></div>
+        <div><span>Instagram</span><a href="https://www.instagram.com/${CONFIG.instagram}/" target="_blank" rel="noopener"><b dir="ltr">@${CONFIG.instagram}</b></a></div>
+        ${CONFIG.email ? `<div><span>Email</span><b>${CONFIG.email}</b></div>` : ""}
         <div><span>${L("Район работы", "אזור שירות")}</span>${L(CONFIG.area.ru, CONFIG.area.he)}</div>
       </div>
     </div>
@@ -69,7 +71,7 @@ function contact(preset) {
 function footer() {
   return `<footer><div class="wrap">
     <span>© ${new Date().getFullYear()} SIGMA SOUND · ${L("аудио, видео, умный дом и безопасность", "אודיו, וידאו, בית חכם ואבטחה")}</span>
-    <span>${L("Проектирование · Монтаж · Сервис", "תכנון · התקנה · שירות")}</span>
+    <span><a href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener" dir="ltr">WhatsApp ${CONFIG.phoneShown}</a> · <a href="https://www.instagram.com/${CONFIG.instagram}/" target="_blank" rel="noopener" dir="ltr">Instagram @${CONFIG.instagram}</a></span>
   </div></footer>`;
 }
 

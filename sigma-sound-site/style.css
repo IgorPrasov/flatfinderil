@@ -144,3 +144,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-s
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
 
 html[lang="he"] .tag,html[lang="he"] .spec dt,html[lang="he"] .contacts-list span{letter-spacing:0;font-family:var(--body);font-weight:600}
+.contacts-list a{text-decoration:none;color:var(--text)}
+.contacts-list a:hover b{color:var(--accent)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
