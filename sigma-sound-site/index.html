@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+<title>Sigma Sound</title>
+<meta name="title-ru" content="Sigma Sound: звук, видео и безопасность">
+<meta name="title-he" content="Sigma Sound: סאונד, וידאו ואבטחה">
+<meta name="description" content="Sigma Sound: проектирование и монтаж аудио, видео, умного дома и систем безопасности в Израиле.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Rubik:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<main>
+<div class="hero">
+  <div class="wrap">
+    <span class="tag"><span data-l="ru">Интегратор AV и smart home · Израиль</span><span data-l="he">אינטגרציית AV ובית חכם · ישראל</span></span>
+    <h1><span data-l="ru">Звук, картинка и защита,<br><em>собранные под ваше пространство</em></span><span data-l="he">סאונד, תמונה ואבטחה,<br><em>מתוכננים בדיוק למקום שלכם</em></span></h1>
+    <p class="lead"><span data-l="ru">Проектируем и монтируем системы для квартир и домов, для баров, ресторанов и клубов, а также видеонаблюдение и сигнализацию. Один подрядчик от замера до сервиса.</span><span data-l="he">אנחנו מתכננים ומתקינים מערכות לדירות ולבתים, לברים, מסעדות ומועדונים, וגם מצלמות ומערכות אזעקה. קבלן אחד מהמדידה ועד השירות.</span></p>
+    <div class="btns">
+      <a class="btn primary" href="#contact"><span data-l="ru">Заказать бесплатный замер</span><span data-l="he">הזמינו ביקור ומדידה בחינם</span></a>
+      <a class="btn" href="#directions"><span data-l="ru">Направления</span><span data-l="he">תחומי פעילות</span></a>
+    </div>
+    <div class="meta">
+      <span><b>3</b> <span data-l="ru">направления</span><span data-l="he">תחומים</span></span>
+      <span><b>48 <span data-l="ru">ч</span><span data-l="he">שעות</span></b> <span data-l="ru">на проект и смету после замера</span><span data-l="he">לתכנון והצעת מחיר אחרי המדידה</span></span>
+      <span><b>RU · עב</b> <span data-l="ru">говорим на вашем языке</span><span data-l="he">מדברים בשפה שלכם</span></span>
+    </div>
+  </div>
+  <canvas id="meter" aria-hidden="true"></canvas>
+</div>
+
+<section id="directions"><div class="wrap">
+  <div class="head">
+    <span class="tag"><span data-l="ru">Направления</span><span data-l="he">תחומי פעילות</span></span>
+    <h2><span data-l="ru">Три канала, одна команда</span><span data-l="he">שלושה ערוצים, צוות אחד</span></h2>
+  </div>
+  <div class="rack">
+    <a class="unit" href="home.html">
+      <div class="ch">CH 01<b>HOME</b><div class="leds"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+      <div class="body">
+        <h3><span data-l="ru">Оборудование для дома</span><span data-l="he">מערכות לבית</span></h3>
+        <p class="muted"><span data-l="ru">Мультирум, домашний кинотеатр, умный свет на KNX, Wi-Fi без мёртвых зон.</span><span data-l="he">מולטירום, קולנוע ביתי, תאורה חכמה ב-KNX ו-Wi-Fi בלי אזורים מתים.</span></p>
+      </div>
+      <span class="go">→</span>
+    </a>
+    <a class="unit" href="venues.html">
+      <div class="ch">CH 02<b>VENUE</b><div class="leds"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="hot"></i></div></div>
+      <div class="body">
+        <h3><span data-l="ru">Бары, рестораны, клубы</span><span data-l="he">ברים, מסעדות ומועדונים</span></h3>
+        <p class="muted"><span data-l="ru">Проектирование звука под помещение: зоны, DJ-пульт, ограничение громкости, фоновая музыка по расписанию.</span><span data-l="he">תכנון סאונד לפי המקום: אזורים, עמדת DJ, הגבלת עוצמה ומוזיקת רקע לפי לוח זמנים.</span></p>
+      </div>
+      <span class="go">→</span>
+    </a>
+    <a class="unit" href="security.html">
+      <div class="ch">CH 03<b>SECURE</b><div class="leds"><i class="on"></i><i class="on"></i><i></i><i></i><i class="hot"></i></div></div>
+      <div class="body">
+        <h3><span data-l="ru">Безопасность</span><span data-l="he">אבטחה</span></h3>
+        <p class="muted"><span data-l="ru">Камеры с записью, сигнализация с подключением к охранному центру, видеоглазок и домофон.</span><span data-l="he">מצלמות עם הקלטה, אזעקה עם חיבור למוקד, עינית דיגיטלית ואינטרקום.</span></p>
+      </div>
+      <span class="go">→</span>
+    </a>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head">
+    <span class="tag"><span data-l="ru">Как мы работаем</span><span data-l="he">איך אנחנו עובדים</span></span>
+    <h2><span data-l="ru">От замера до сервиса</span><span data-l="he">מהמדידה ועד השירות</span></h2>
+  </div>
+  <div class="steps">
+    <div class="step"><h3><span data-l="ru">Выезд и замер</span><span data-l="he">ביקור ומדידה</span></h3><p class="muted"><span data-l="ru">Смотрим помещение, слушаем задачу, проверяем электрику и трассы для кабеля.</span><span data-l="he">רואים את המקום, מקשיבים לצרכים, בודקים חשמל ותוואי כבלים.</span></p></div>
+    <div class="step"><h3><span data-l="ru">Проект и смета</span><span data-l="he">תכנון והצעת מחיר</span></h3><p class="muted"><span data-l="ru">Схема размещения и подробное КП с моделями и ценами за 48 часов.</span><span data-l="he">תוכנית מיקום והצעת מחיר מפורטת עם דגמים ומחירים תוך 48 שעות.</span></p></div>
+    <div class="step"><h3><span data-l="ru">Монтаж и настройка</span><span data-l="he">התקנה והגדרה</span></h3><p class="muted"><span data-l="ru">Прокладка кабеля, установка, программирование, настройка приложений.</span><span data-l="he">העברת כבלים, התקנה, תכנות והגדרת אפליקציות.</span></p></div>
+    <div class="step"><h3><span data-l="ru">Сдача и сервис</span><span data-l="he">מסירה ושירות</span></h3><p class="muted"><span data-l="ru">Обучаем пользоваться, даём гарантию на работы и остаёмся на связи.</span><span data-l="he">מדריכים איך להשתמש, נותנים אחריות על העבודה ונשארים זמינים.</span></p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head">
+    <span class="tag"><span data-l="ru">Оборудование</span><span data-l="he">ציוד</span></span>
+    <h2><span data-l="ru">Работаем с проверенными системами</span><span data-l="he">עובדים עם מערכות מוכחות</span></h2>
+  </div>
+  <dl class="spec">
+    <div><dt><span data-l="ru">Аудио</span><span data-l="he">אודיו</span></dt><dd>Sonos · Bowers &amp; Wilkins</dd></div>
+    <div><dt><span data-l="ru">Свет и автоматизация</span><span data-l="he">תאורה ואוטומציה</span></dt><dd>KNX · MDT · Gira</dd></div>
+    <div><dt><span data-l="ru">Камеры и сигнализация</span><span data-l="he">מצלמות ואזעקה</span></dt><dd>Hikvision · AX Pro</dd></div>
+    <div><dt><span data-l="ru">Сеть</span><span data-l="he">רשת</span></dt><dd>Ubiquiti UniFi</dd></div>
+  </dl>
+</div></section>
+
+<div id="contact-slot" data-preset="home"></div>
+</main>
+</body>
+</html>
